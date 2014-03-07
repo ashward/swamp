@@ -10,7 +10,7 @@ Imagine if the password management application do update their password to a lov
 
 This is where SWAMP comes in: By defining a standard API for each service, the password management application can log in on the user's behalf and update their password, or other account details (maybe they have changed their telephone number) automatically.
 
-## SWAMP Protocol
+## Protocol
 The set of SWAMP protocols define a well known set of services which allow an automated system to update a user's account details.
 
 ### Use Cases
@@ -116,3 +116,8 @@ A service might have a policy to enforce certain password standards. If the pass
 		"reason": "policy",
 		"reasonText": "The password should be at least 12 characters long"
 	}
+
+## Security Considerations
+* The service SHOULD only be operated over HTTPS. If a step of the process redirects to an insecure connection then the client SHOULD terminate the process and SHOULD NOT send any credentials over an insecure link.
+* The client SHOULD reject connections to a SWAMP service if the certificate is invalid
+* The client might wish to allow the user to override this and prompt the user whether to connect to a system with an invalid certificates (e.g. self signed). This SHOULD be on a case by case basis and SHOULD NOT be a global setting.
