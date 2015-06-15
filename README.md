@@ -2,7 +2,7 @@
 SWAMP, or Standardised Web Account Management Protocol, is a protocol to allow an automated system to manipulate a user's account details for a web service using a well-known API.
 
 ### Why SWAMP?
-A user may have dozens of web accounts, each with it's own username and password. They are being a good citizen and using a password management application to generate randomized, secure passwords. However, they also know that they should change their passwords regularly, but having so many accounts this becomes a real chore to indidually navigate to each website's account management page, generate a new password, update their password and update the stored version of their password.
+A user may have dozens of web accounts, each with its own username and password. They are being a good citizen and using a password management application to generate randomized, secure passwords. However, they also know that they should change their passwords regularly, but having so many accounts this becomes a real chore to indidually navigate to each website's account management page, generate a new password, update their password and update the stored version of their password.
 
 This is made somewhat easier through Single Sign On (SSO) based system such as OAuth, Facebook, Google etc. However, there are still many services which don't implement SSO or for which SSO is not desirable or practical.
 
